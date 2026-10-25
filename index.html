@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Harmonia Frequency Studio — découvrez des générateurs de fréquences et des équipements de bien-être.">
+  <title>Harmonia Frequency Studio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0c1320;--panel:#151f30;--gold:#d7bd82;--text:#f5f2ea;--muted:#b8c0ce}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b2b40 0,#0c1320 58%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
+    .wrap{width:min(1100px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid #ffffff20;gap:16px}.brand{font-weight:800;letter-spacing:.08em;color:var(--gold)}.nav a,.btn{color:var(--text);text-decoration:none}
+    .hero{padding:76px 0 64px;max-width:800px}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:.2em;font-size:.78rem}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.05;margin:16px 0}.hero p{font-size:1.12rem;color:var(--muted);max-width:650px}
+    .btn{display:inline-block;margin-top:18px;padding:13px 20px;background:var(--gold);color:#17202c;border-radius:999px;font-weight:750}.section{padding:38px 0 68px}.section h2{font-size:2rem;margin-bottom:8px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-top:25px}
+    .card{background:linear-gradient(145deg,#19273a,#121b2a);border:1px solid #ffffff18;border-radius:20px;padding:24px}.symbol{font-size:2rem;color:var(--gold)}.card h3{margin:12px 0 6px}.card p{color:var(--muted)}.pill{display:inline-block;border:1px solid #d7bd8266;border-radius:99px;padding:4px 10px;font-size:.8rem;color:var(--gold)}
+    .note{border-left:3px solid var(--gold);padding:14px 18px;background:#ffffff08;color:var(--muted);margin-top:28px}.contact{background:#151f30;border:1px solid #ffffff18;border-radius:22px;padding:28px;margin-bottom:60px}footer{border-top:1px solid #ffffff20;padding:24px 0 36px;color:var(--muted);font-size:.9rem}
+    @media(max-width:600px){.hero{padding:54px 0 42px}.nav{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <nav class="nav"><div class="brand">HARMONIA <span style="color:#f5f2ea">FREQUENCY STUDIO</span></div><a href="#contact">Nous contacter ↗</a></nav>
+    <section class="hero">
+      <div class="eyebrow">Technologie · fréquences · bien-être</div>
+      <h1>Explorez l’univers des fréquences.</h1>
+      <p>Bienvenue chez Harmonia Frequency Studio. Découvrez une sélection d’équipements et de générateurs de fréquences, avec un accompagnement pour vous aider à identifier le matériel adapté à vos besoins.</p>
+      <a class="btn" href="#selection">Découvrir la sélection</a>
+    </section>
+  </header>
+  <main class="wrap">
+    <section class="section" id="selection">
+      <span class="pill">Notre sélection</span>
+      <h2>Équipements à découvrir</h2>
+      <p class="muted">La sélection détaillée et les disponibilités seront ajoutées prochainement. Contactez-nous pour obtenir les informations sur les modèles, les prix et la livraison.</p>
+      <div class="grid">
+        <article class="card"><div class="symbol">〰</div><h3>Générateurs de fréquences</h3><p>Découvrez les appareils disponibles et leurs caractéristiques techniques.</p><a class="btn" href="#contact">Demander les détails</a></article>
+        <article class="card"><div class="symbol">◉</div><h3>Accessoires & connexions</h3><p>Accessoires compatibles, options de connexion et informations d’utilisation à confirmer selon le modèle.</p><a class="btn" href="#contact">Se renseigner</a></article>
+        <article class="card"><div class="symbol">✧</div><h3>Conseil personnalisé</h3><p>Présentez votre projet pour recevoir des informations avant de choisir un équipement.</p><a class="btn" href="#contact">Nous écrire</a></article>
+      </div>
+      <div class="note"><strong>Information importante :</strong> les appareils et technologies de fréquence présentés ne remplacent pas un avis, un diagnostic ou un traitement médical. Aucune promesse de guérison n’est faite.</div>
+    </section>
+    <section class="contact" id="contact">
+      <span class="pill">Contact</span>
+      <h2>Parlons de votre projet</h2>
+      <p class="muted">Pour connaître les modèles disponibles, les tarifs, les conditions de livraison ou les détails techniques, écrivez-nous.</p>
+      <a class="btn" href="mailto:contact@harmonia-frequency-studio.example?subject=Demande%20d'information%20—%20Harmonia%20Frequency%20Studio">Préparer un e-mail</a>
+      <p class="muted" style="font-size:.9rem">À configurer avant lancement : remplacez l’adresse e-mail de démonstration par votre véritable adresse et ajoutez vos produits, prix, conditions de vente et livraison.</p>
+    </section>
+  </main>
+  <footer><div class="wrap">© <span id="year"></span> Harmonia Frequency Studio · Site en préparation</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
